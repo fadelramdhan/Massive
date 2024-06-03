@@ -1,0 +1,27 @@
+import React from 'react';
+import '../App.css';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Recommendations from '../components/Recommendations';
+import Hampers from '../components/Hampers';
+import Discount from '../components/Discount';
+import Advantages from '../components/Advantages';
+import Testimonials from '../components/Testimonials';
+
+function Beranda() {
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <Hero />
+        <Recommendations />
+        <Hampers />
+        <Discount />
+        <Advantages />
+        <Testimonials />
+      </main>
+    </div>
+  );
+}
+
+export default Beranda;
