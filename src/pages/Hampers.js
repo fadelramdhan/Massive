@@ -2,51 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Hampers.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Hampers = () => {
   return (
     <div>
-      <header>
-        <nav>
-          <div className="logo">
-            <img
-              src="./logo.png"
-              alt="Sweety Pastry"
-            />
-          </div>
-          <ul>
-            <li>
-              <Link to="/beranda">Beranda</Link>
-            </li>
-            <li>
-              <Link to="/produk">Produk</Link>
-            </li>
-            <li>
-              <Link to="/hampers">Hampers</Link>
-            </li>
-          </ul>
-          <div className="icons">
-            <span>
-              <i className="bi bi-toggle2-off"></i>
-            </span>
-            <span>
-              <i className="bi bi-cart"></i>
-            </span>
-            <Link to="/login">
-              <span>
-                <i className="bi bi-person-circle"></i>
-              </span>
-            </Link>
-          </div>
-        </nav>
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Cari produk..."
-          />
-          <button type="button">Cari</button>
-        </div>
-      </header>
+      <Header />
       <main>
         <section className="product-list">
           <div className="product-card">
@@ -147,6 +109,7 @@ const Hampers = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

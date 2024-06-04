@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './App.css';
 import Beranda from './pages/Beranda';
+import Product from './pages/Product';
 import Hampers from './pages/Hampers';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ProductList from './components/ProductList';
+import ReqHampers from './pages/ReqHampers';
+import FormPage from './components/FormPage';
+import OrderPage from './pages/OrderPage';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <div className="content-wrapper">
         <Routes>
           <Route
-            path="/ProductList"
-            element={<ProductList />}
+            path="/Product"
+            element={<Product />}
           />
           <Route
             path="/Beranda"
@@ -25,8 +26,19 @@ function App() {
             path="/Hampers"
             element={<Hampers />}
           />
+          <Route
+            path="/ReqHampers"
+            element={<ReqHampers />}
+          />
+          <Route
+            path="/FormPage"
+            element={<FormPage />}
+          />
+          <Route
+            path="/OrderPage"
+            element={<OrderPage />}
+          />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

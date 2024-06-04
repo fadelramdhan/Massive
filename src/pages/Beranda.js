@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Recommendations from '../components/Recommendations';
 import Hampers from '../components/Hampers';
@@ -20,6 +21,7 @@ function Beranda() {
         <Advantages />
         <Testimonials />
       </main>
+      <Footer />
     </div>
   );
 }
