@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Hampers.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Header from '../components/Header';
@@ -9,6 +8,13 @@ const Hampers = () => {
   return (
     <div>
       <Header />
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Cari..."
+        />
+        <button>Cari</button>
+      </div>
       <main>
         <section className="product-list">
           <div className="product-card">

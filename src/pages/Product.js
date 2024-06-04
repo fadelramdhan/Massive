@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const Product = () => {
   const products = [
     {
-      imgSrc: '../',
+      imgSrc: './nastar-katalog.png',
       alt: 'Nastar',
       link: '../detailpages/PageNastar.html',
       name: 'Nastar',
@@ -15,7 +15,7 @@ const Product = () => {
       weight: '250 gram',
     },
     {
-      imgSrc: '../asset/Kue-Kacang.png',
+      imgSrc: './Kue-Kacang.png',
       alt: 'Kue Kacang',
       link: '../detailpages/PageKuekacang.html',
       name: 'Kue Kacang',
@@ -23,7 +23,7 @@ const Product = () => {
       weight: '250 gram',
     },
     {
-      imgSrc: '../asset/Kue-Semprong.png',
+      imgSrc: './Kue-Semprong.png',
       alt: 'Kue Semprong',
       link: '../detailpages/PageKuesemprong.html',
       name: 'Kue Semprong',
@@ -31,7 +31,7 @@ const Product = () => {
       weight: '250 gram',
     },
     {
-      imgSrc: '../asset/Kue-Keju-Strawberry.png',
+      imgSrc: './Kue-Keju-Strawberry.png',
       alt: 'Kue Keju Strawberry',
       link: '../detailpages/PageKuekejustrawbery.html',
       name: 'Kue Keju Strawberry',
@@ -39,7 +39,7 @@ const Product = () => {
       weight: '250 gram',
     },
     {
-      imgSrc: '../asset/Kastengel.png',
+      imgSrc: './Kastengel.png',
       alt: 'Kastengel',
       link: '../detailpages/kastengel.html',
       name: 'Kastengel',
@@ -47,7 +47,7 @@ const Product = () => {
       weight: '250 gram',
     },
     {
-      imgSrc: '../asset/Putri-Salju.png',
+      imgSrc: './Putri-Salju.png',
       alt: 'Putri Salju',
       link: '../detailpages/putrisalju.html',
       name: 'Putri Salju',
@@ -59,6 +59,13 @@ const Product = () => {
   return (
     <div>
       <Header />
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Cari..."
+        />
+        <button>Cari</button>
+      </div>
       <main>
         <section className="product-list">
           {products.map((product, index) => (
