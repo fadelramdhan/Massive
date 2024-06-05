@@ -12,7 +12,7 @@ import Testimonials from '../components/Testimonials';
 function Beranda() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
         <Recommendations />
@@ -21,7 +21,7 @@ function Beranda() {
         <Advantages />
         <Testimonials />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

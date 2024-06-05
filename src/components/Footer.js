@@ -5,7 +5,7 @@ import '../App.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='text-white'>
       <div className="footer-container">
         <div className="footer-section">
           <h3>Sweety Pastry</h3>

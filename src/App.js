@@ -44,6 +44,7 @@ function App() {
   return (
     <Router>
       <div className="content-wrapper">
+        <Header/>
         <Routes>
           <Route
             path="/Product"
@@ -82,6 +83,7 @@ function App() {
             element={<Login />}
           /> */}
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

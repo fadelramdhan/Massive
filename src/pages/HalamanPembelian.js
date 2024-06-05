@@ -6,11 +6,11 @@ const HalamanPembelian = () => {
   return (
     <div
       className="bg"
-      style={{ backgroundColor: '#8b5e3c' }}
+      style={{ backgroundColor: '#bc6c25' }}
     >
       <Container className="detil p-5">
-        <div className="tulisan">
-          <h2>Detil Pembeli</h2>
+        <div className="tulisan text-white">
+          <h2 style={{fontFamily: `jua`}}>Detil Pembeli</h2>
         </div>
         <Form>
           <Row className="mb-3">

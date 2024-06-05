@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 function HalamanKeranjang() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <main className="container-fluid pe-5 ps-5">
         <Container className="d-flex flex-column">
           <div>
@@ -28,7 +28,7 @@ function HalamanKeranjang() {
               </div>
               <div className="d-flex flex-row flex-grow-1 p-2">
                 <img
-                  src="./asset/images/Rectangle 171.png"
+                  src="./Nastar.png"
                   alt="Deskripsi gambar"
                   style={{ objectFit: 'contain', width: 'auto', height: '200px' }}
                 />
