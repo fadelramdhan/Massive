@@ -28,9 +28,11 @@ const Header = () => {
           <span>
             <i className="bi bi-toggle2-off"></i>
           </span>
-          <span>
-            <i className="bi bi-cart"></i>
-          </span>
+          <a href="HalamanKeranjang">
+            <span>
+              <i className="bi bi-cart"></i>
+            </span>
+          </a>
           <a href="Login">
             <span>
               <i className="bi bi-person-circle"></i>

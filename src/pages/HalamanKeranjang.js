@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -6,19 +8,10 @@ function HalamanKeranjang() {
   return (
     <div>
       <Header />
-
       <main className="container-fluid pe-5 ps-5">
-        <Container className="flex-column">
+        <Container className="d-flex flex-column">
           <div>
-            <h1
-              style={{
-                fontFamily: 'jua',
-                color: '#bc6c25',
-                paddingTop: '1rem',
-              }}
-            >
-              Keranjang
-            </h1>
+            <h1 style={{ fontFamily: 'jua', color: '#bc6c25', paddingTop: '1rem' }}>Keranjang</h1>
           </div>
           <hr />
           <Row className="d-flex flex-row p-5">
@@ -26,24 +19,18 @@ function HalamanKeranjang() {
               md={9}
               className="d-flex flex-row"
             >
-              <div className="">
-                <div className="form-check">
-                  <Form.Check
-                    type="checkbox"
-                    className="p-3"
-                    id="flexCheckDefault"
-                  />
-                </div>
+              <div>
+                <Form.Check
+                  type="checkbox"
+                  className="p-3"
+                  id="flexCheckDefault"
+                />
               </div>
               <div className="d-flex flex-row flex-grow-1 p-2">
                 <img
                   src="./asset/images/Rectangle 171.png"
                   alt="Deskripsi gambar"
-                  style={{
-                    objectFit: 'contain',
-                    width: 'auto',
-                    height: '200px',
-                  }}
+                  style={{ objectFit: 'contain', width: 'auto', height: '200px' }}
                 />
                 <div className="isi-tulisan d-flex flex-column ps-2 justify-content-between">
                   <div className="isi-o d-flex flex-column">
@@ -66,15 +53,7 @@ function HalamanKeranjang() {
                   >
                     <Button
                       className="text-white h-100"
-                      style={{
-                        width: '45px',
-                        outline: 'none',
-                        border: 'none',
-                        padding: '0',
-                        margin: '0',
-                        backgroundColor: '#606c38',
-                        borderRadius: '10px 0 0 10px',
-                      }}
+                      style={{ width: '45px', outline: 'none', border: 'none', padding: '0', margin: '0', backgroundColor: '#606c38', borderRadius: '10px 0 0 10px' }}
                     >
                       -
                     </Button>
@@ -86,15 +65,7 @@ function HalamanKeranjang() {
                     </span>
                     <Button
                       className="text-white h-100"
-                      style={{
-                        width: '45px',
-                        outline: 'none',
-                        border: 'none',
-                        padding: '0',
-                        margin: '0',
-                        backgroundColor: '#606c38',
-                        borderRadius: '0 10px 10px 0',
-                      }}
+                      style={{ width: '45px', outline: 'none', border: 'none', padding: '0', margin: '0', backgroundColor: '#606c38', borderRadius: '0 10px 10px 0' }}
                     >
                       +
                     </Button>
@@ -128,14 +99,7 @@ function HalamanKeranjang() {
               </div>
               <Button
                 className="text-white w-100 text-center align-items-center justify-content-center"
-                style={{
-                  backgroundColor: '#606c38',
-                  paddingTop: '1rem',
-                  paddingBottom: '1rem',
-                  borderRadius: '10px',
-                  border: 'none',
-                  fontSize: 'large',
-                }}
+                style={{ backgroundColor: '#606c38', paddingTop: '1rem', paddingBottom: '1rem', borderRadius: '10px', border: 'none', fontSize: 'large' }}
               >
                 PESAN
               </Button>
