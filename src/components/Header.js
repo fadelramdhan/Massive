@@ -1,9 +1,16 @@
-// src/components/Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../App.css';
 
-const Header = () => {
+const Header = ({ onToggleMode }) => {
+  const [isToggled, setIsToggled] = useState(false);
+
+  const handleToggle = () => {
+    const newToggleState = !isToggled;
+    setIsToggled(newToggleState);
+    onToggleMode(newToggleState);
+  };
+
   return (
     <header>
       <nav>
@@ -25,10 +32,10 @@ const Header = () => {
           </li>
         </ul>
         <div className="icons">
-          <span>
-            <i className="bi bi-toggle2-off"></i>
+          <span onClick={handleToggle}>
+            <i className={`bi ${isToggled ? 'bi-toggle2-on' : 'bi-toggle2-off'}`}></i>
           </span>
-          <a href="HalamanKeranjang">
+          <a href="Keranjang">
             <span>
               <i className="bi bi-cart"></i>
             </span>

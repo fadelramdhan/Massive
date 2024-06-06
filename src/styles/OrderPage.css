@@ -57,26 +57,25 @@ main {
 
 h1 {
   color: #d2691e;
-  text-align: center;
 }
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  border: none;
+  outline: none;
+  margin-top: 40px;
 }
 
 th,
 td {
   padding: 10px;
+  height: 70px;
+  width: 50px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  font-size: large;
+  /* border-bottom: 1px solid #ddd; */
 }
 
-th {
-  background-color: #d2691e;
-  color: white;
-}
 
 footer {
   background-color: #bc6c25;

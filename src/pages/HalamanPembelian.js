@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/HalamanPembelian.css";
 
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
@@ -12,7 +13,7 @@ const HalamanPembelian = () => {
         <div className="tulisan text-white">
           <h2 style={{fontFamily: `jua`}}>Detil Pembeli</h2>
         </div>
-        <Form>
+        <Form id='formstel' style={{maxWidth: 'none', borderRadius:'50px 50px 0 0'}}>
           <Row className="mb-3">
             <Col md={6}>
               <Form.Group controlId="namaDepan">

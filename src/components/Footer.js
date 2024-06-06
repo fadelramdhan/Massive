@@ -5,7 +5,7 @@ import '../App.css';
 
 const Footer = () => {
   return (
-    <footer className='text-white'>
+    <footer className='text-white' style={{boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}>
       <div className="footer-container">
         <div className="footer-section">
           <h3>Sweety Pastry</h3>

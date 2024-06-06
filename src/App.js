@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 // import axios from 'axios';
 // import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -17,6 +17,11 @@ import HalamanPembelian from './pages/HalamanPembelian';
 // import Login from './pages/Login';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleToggleMode = (isToggled) => {
+    setIsDarkMode(isToggled);
+  };
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
@@ -43,8 +48,8 @@ function App() {
 
   return (
     <Router>
-      <div className="content-wrapper">
-        <Header/>
+      <div className={isDarkMode ? 'dark-mode' : ''}> {}
+        <Header onToggleMode={handleToggleMode} />
         <Routes>
           <Route
             path="/Product"
