@@ -58,8 +58,8 @@ const Login = () => {
       <Container className="login-container" style={{backgroundColor:'#fefae0', padding:'1rem 5rem 1rem 5rem', margin:'0', maxWidth:'none'}}>
         <Row style={{paddingTop:'3rem'}}>
           <Col className="login-form p-5">
-            <h1 style={{ paddingLeft: '1.4rem', fontFamily: 'jua' }}>Masuk</h1>
-            <Form style={{ paddingTop: '1rem',paddingLeft:'0', boxShadow: 'none', backgroundColor:'#fefae0' }}>
+            <h1 style={{ paddingLeft: '1.4rem', fontFamily: 'jua' }}>Daftar</h1>
+            <Form style={{ paddingTop: '1rem', boxShadow: 'none', backgroundColor:'#fefae0' }}>
               <Form.Group controlId="username">
                 <Form.Label>Nama Pengguna</Form.Label>
                 <Form.Control style={{ marginBottom: '2rem', padding:'1rem', borderRadius:'10px' }} type="text" placeholder="Masukkan nama pengguna" required />
@@ -73,11 +73,8 @@ const Login = () => {
                 </div>
               </Form.Group>
 
-              <Button variant="primary" style={{ backgroundColor: ' #6b8e23', border: 'none' }} type="submit">Masuk</Button>
+              <Button variant="primary" style={{ backgroundColor: ' #6b8e23', border: 'none' }} type="submit">Daftar</Button>
             </Form>
-            <p style={{paddingLeft:'1.4rem'}}>
-              Belum Memiliki Akun? <a href="Register" style={{color:'#a8a872'}}>Daftar</a>
-            </p>
           </Col>
           <Col className="logo-container d-flex align-items-center justify-content-center">
             <Image style={{borderRadius:'50px'}} src="./logo.png" alt="Sweety Pastry" fluid />

@@ -14,7 +14,8 @@ import FormPage from './components/FormPage';
 import OrderPage from './pages/OrderPage';
 import HalamanKeranjang from './pages/HalamanKeranjang';
 import HalamanPembelian from './pages/HalamanPembelian';
-// import Login from './pages/Login';
+import Register from './pages/Register';
+import Login from './pages/Login';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -49,7 +50,7 @@ function App() {
   return (
     <Router>
       <div className={isDarkMode ? 'dark-mode' : ''}> {}
-        <Header onToggleMode={handleToggleMode} />
+        {/* <Header onToggleMode={handleToggleMode} /> */}
         <Routes>
           <Route
             path="/Product"
@@ -83,12 +84,20 @@ function App() {
             path="/OrderPage"
             element={<OrderPage />}
           />
+          <Route
+            path="/Register"
+            element={<Register />}
+          />
+          <Route
+            path="/Login"
+            element={<Login />}
+          />
           {/* <Route
             path="/Login"
             element={<Login />}
           /> */}
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </Router>
   );
