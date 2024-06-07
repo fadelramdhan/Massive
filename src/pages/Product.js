@@ -52,7 +52,7 @@ const Product = () => {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div className="search-bar">
         <input
           type="text"
