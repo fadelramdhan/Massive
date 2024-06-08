@@ -50,7 +50,7 @@ function App() {
   return (
     <Router>
       <div className={isDarkMode ? 'dark-mode' : ''}> {}
-        {/* <Header onToggleMode={handleToggleMode} /> */}
+        <Header onToggleMode={handleToggleMode} />
         <Routes>
           <Route
             path="/Product"

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const Hampers = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className="search-bar">
         <input
           type="text"

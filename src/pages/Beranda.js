@@ -12,7 +12,7 @@ import Testimonials from '../components/Testimonials';
 function Beranda() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
         <Recommendations />
