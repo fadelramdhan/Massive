@@ -1,4 +1,4 @@
-import React, {useState}from 'react';
+import React, { useState } from 'react';
 // import axios from 'axios';
 // import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -16,6 +16,9 @@ import HalamanKeranjang from './pages/HalamanKeranjang';
 import HalamanPembelian from './pages/HalamanPembelian';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import KartuUcapan from './pages/KartuUcapan';
+import Pembayaran from './pages/Pembayaran';
+
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -49,7 +52,7 @@ function App() {
 
   return (
     <Router>
-      <div className={isDarkMode ? 'dark-mode' : ''}> {}
+      <div className={isDarkMode ? 'dark-mode' : ''}> { }
         <Header onToggleMode={handleToggleMode} />
         <Routes>
           <Route
@@ -91,6 +94,17 @@ function App() {
           <Route
             path="/Login"
             element={<Login />}
+          />
+
+          <Route
+            path="/Kartu"
+            element={<KartuUcapan />}
+          />
+
+
+          <Route
+            path="/Bayar"
+            element={<Pembayaran />}
           />
           {/* <Route
             path="/Login"
