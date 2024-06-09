@@ -12,6 +12,7 @@ const Product = () => {
       name: 'Nastar',
       price: 'Rp.75.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
     {
       imgSrc: './Kue-Kacang.png',
@@ -19,6 +20,7 @@ const Product = () => {
       name: 'Kue Kacang',
       price: 'Rp.60.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
     {
       imgSrc: './Kue-Semprong.png',
@@ -26,6 +28,7 @@ const Product = () => {
       name: 'Kue Semprong',
       price: 'Rp.25.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
     {
       imgSrc: './Kue-Keju-Strawberry.png',
@@ -33,6 +36,7 @@ const Product = () => {
       name: 'Kue Keju Strawberry',
       price: 'Rp.70.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
     {
       imgSrc: './Kastengel.png',
@@ -40,6 +44,7 @@ const Product = () => {
       name: 'Kastengel',
       price: 'Rp.60.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
     {
       imgSrc: './Putri-Salju.png',
@@ -47,6 +52,7 @@ const Product = () => {
       name: 'Putri Salju',
       price: 'Rp.70.000',
       weight: '250 gram',
+      link:'./DetailProduct'
     },
   ];
 

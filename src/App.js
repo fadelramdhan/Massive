@@ -18,6 +18,8 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import KartuUcapan from './pages/KartuUcapan';
 import Pembayaran from './pages/Pembayaran';
+import DetailHampers from './pages/DetailHampers';
+import DetailProduct from './pages/DetailProduct';
 
 
 function App() {
@@ -96,6 +98,16 @@ function App() {
             element={<Login />}
           />
 
+          <Route
+            path="/DetailHampers"
+            element={<DetailHampers />}
+          />
+
+
+          <Route
+            path="/DetailProduct"
+            element={<DetailProduct />}
+          />
           <Route
             path="/Kartu"
             element={<KartuUcapan />}
