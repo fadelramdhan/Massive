@@ -1,15 +1,26 @@
-import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Button, Modal } from "react-bootstrap";
+import '../styles/Pembayaran.css'; // Import CSS file
 
 const Pembayaran = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleBayarClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <>
-            <Container style={{fontFamily:'jua'}}>
+            <Container style={{ fontFamily: 'jua' }}>
                 <Row className="d-flex mt-5">
-                    <Col className="d-flex flex-column me-5" style={{ backgroundColor: '#fefae0', padding:'2rem', borderRadius:'20px' }}>
+                    <Col className="d-flex flex-column me-5" style={{ backgroundColor: '#DDA15E', padding: '2rem', borderRadius: '20px' }}>
                         <div className="Rincian">
-                            <h2 style={{fontWeight:'bolder'}}>Rincian Pesanan</h2>
-                            <h3 style={{fontWeight:'bolder'}}>Produk</h3>
+                            <h2 style={{ fontWeight: 'bolder' }}>Rincian Pesanan</h2>
+                            <h3 style={{ fontWeight: 'bolder' }}>Produk</h3>
                         </div>
                         <div className="d-flex flex-row justify-content-between Uraian">
                             <div className="d-flex flex-column ">
@@ -49,17 +60,17 @@ const Pembayaran = () => {
                         <hr></hr>
                         <div className="d-flex flex-row justify-content-between Uraian">
                             <div className="d-flex flex-column ">
-                                <p style={{fontWeight:'bolder'}}>Total Pembayaran</p>
+                                <p style={{ fontWeight: 'bolder' }}>Total Pembayaran</p>
                             </div>
                             <div>
-                                <p style={{fontWeight:'bolder'}}> Rp 268.000</p>
+                                <p style={{ fontWeight: 'bolder' }}> Rp 268.000</p>
                             </div>
                         </div>
                     </Col>
 
-                    <Col className="d-flex flex-column me-5" style={{ backgroundColor: '#fefae0', padding:'2rem', borderRadius:'20px' }}>
+                    <Col className="d-flex flex-column me-5" style={{ backgroundColor: '#DDA15E', padding: '2rem', borderRadius: '20px' }}>
                         <div className="Rincian">
-                            <h2 style={{fontWeight:'bolder'}}>Rincian Metode Pemnayaran</h2>
+                            <h2 style={{ fontWeight: 'bolder' }}>Rincian Metode Pembayaran</h2>
                         </div>
                         <p>Opsi Pengiriman</p>
                         <div className="d-flex flex-column Uraian">
@@ -86,13 +97,28 @@ const Pembayaran = () => {
             <div>
                 <Container className='text-center justify-content-center align-item-center'>
                     <div className="pe-5 ">
-                        <Button style={{marginRight:'2rem', padding:'0.5rem 4rem', color: '#6b8e23', outline:'#6b8e23', borderColor:'#6b8e23', backgroundColor:'#ffff'}}>Batal</Button>
-                        <Button style={{padding:'0.5rem 4rem', border:'none', backgroundColor:'#6b8e23'}}>Bayar</Button>
+                        <Button style={{ marginRight: '2rem', padding: '0.5rem 4rem', color: '#6b8e23', outline: '#6b8e23', borderColor: '#6b8e23', backgroundColor: '#ffff' }}>Batal</Button>
+                        <Button onClick={handleBayarClick} style={{ padding: '0.5rem 4rem', border: 'none', backgroundColor: '#6b8e23' }}>Bayar</Button>
                     </div>
                 </Container>
             </div>
-        </>
-    )
-}
 
-export default Pembayaran
+            <Modal show={showModal} onHide={handleCloseModal} centered>
+                <Modal.Body className="custom-modal-body">
+                    <div className="modal-circle"></div>
+                    <div className="modal-title">Rp268.000</div>
+                    <div className="modal-subtitle">Metode Pembayaran : BRI</div>
+                    <div className="modal-info">Virtual Akun : 1234 5678 9876 5432</div>
+                    <div className="modal-info">Nomor Resi Pengiriman : JNT237484</div>
+                    <div className="modal-info">Waktu & Tgl Pembayaran : 09:00 WIB 12-04-2024</div>
+                    <hr className="modal-divider" />
+                    <div className="modal-button-container">
+                        <Button onClick={handleCloseModal} className="modal-button">Selesai</Button>
+                    </div>
+                </Modal.Body>
+            </Modal>
+        </>
+    );
+};
+
+export default Pembayaran;

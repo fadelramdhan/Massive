@@ -23,7 +23,7 @@ function RiwayatPesanan() {
           <hr />
           <div className="tabble">
             <Table hover>
-              <thead style={{ background: '#bc6c25', color: 'white' }}>
+              <thead style={{ background:'#DDA15E', color: 'white' }}>
                 <tr>
                   <th>Tanggal</th>
                   <th>Nama Produk</th>
