@@ -20,7 +20,8 @@ import KartuUcapan from './pages/KartuUcapan';
 import Pembayaran from './pages/Pembayaran';
 import DetailHampers from './pages/DetailHampers';
 import DetailProduct from './pages/DetailProduct';
-
+import Profile from './pages/Profile';
+import EditProfile from './pages/EditProfile';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -118,6 +119,15 @@ function App() {
             path="/Bayar"
             element={<Pembayaran />}
           />
+          <Route
+            path="/Profile"
+            element={<Profile/>}          
+          />
+          <Route
+            path="/EditProfile"
+            element={<EditProfile/>}          
+          />
+          
           {/* <Route
             path="/Login"
             element={<Login />}
