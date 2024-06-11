@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 // import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -20,6 +20,7 @@ import KartuUcapan from './pages/KartuUcapan';
 import Pembayaran from './pages/Pembayaran';
 import DetailHampers from './pages/DetailHampers';
 import DetailProduct from './pages/DetailProduct';
+import Test from './pages/test';
 
 
 function App() {
@@ -108,6 +109,14 @@ function App() {
             path="/DetailProduct"
             element={<DetailProduct />}
           />
+
+
+
+          <Route
+            path="/test"
+            element={<Test />}
+          />
+
           <Route
             path="/Kartu"
             element={<KartuUcapan />}
